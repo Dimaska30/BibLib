@@ -1,0 +1,18 @@
+body{
+    width: 100%;
+    background: #E4DBBF;
+}
+
+.gifka{
+    display: block;
+    height: 44vmin;
+    width: 44vmin;
+    margin: auto;
+    -webkit-mask-image: url(/images/mask-image.png);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-clip: view-box;
+    background: url(/images/setting.gif) no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+}

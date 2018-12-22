@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "nodemon": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build": "docker-compose build --no-cache",
+    "docker-start": "docker-compose up",
+    "docker-clean": "docker-compose stop && docker-compose down --rmi local --volumes --remove-orphans"
+  },
+  "author": "Dimaska",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-static": "^5.0.0",
+    "pg": "^7.7.1",
+    "sequelize": "^4.42.0"
+  }
+}
